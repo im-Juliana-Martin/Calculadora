@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Arco-Íris</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="calculadora">
+    <input type="text" id="resultado" disabled>
+    <div>
+        <button class="btn-1" onclick="adicionarNumero('1')">1</button>
+        <button class="btn-2" onclick="adicionarNumero('2')">2</button>
+        <button class="btn-3" onclick="adicionarNumero('3')">3</button>
+        <button class="btn-operacoes" onclick="adicionarOperacao('+')">+</button>
+    </div>
+    <div>
+        <button class="btn-4" onclick="adicionarNumero('4')">4</button>
+        <button class="btn-5" onclick="adicionarNumero('5')">5</button>
+        <button class="btn-6" onclick="adicionarNumero('6')">6</button>
+        <button class="btn-operacoes" onclick="adicionarOperacao('-')">-</button>
+    </div>
+    <div>
+        <button class="btn-7" onclick="adicionarNumero('7')">7</button>
+        <button class="btn-1" onclick="adicionarNumero('8')">8</button>
+        <button class="btn-2" onclick="adicionarNumero('9')">9</button>
+        <button class="btn-operacoes" onclick="adicionarOperacao('*')">*</button>
+    </div>
+    <div>
+        <button class="btn-limpar" onclick="limpar()">C</button>
+        <button class="btn-3" onclick="adicionarNumero('0')">0</button>
+        <button class="btn-igual" onclick="calcular()">=</button>
+        <button class="btn-operacoes" onclick="adicionarOperacao('/')">/</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
